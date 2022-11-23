@@ -1,0 +1,13 @@
+div{
+    margin: 20px;
+}
+
+.task{
+    padding: 20px;
+    border: 1px solid red;
+    margin: 20px;
+}
+
+h4{
+    text-align: center;
+}

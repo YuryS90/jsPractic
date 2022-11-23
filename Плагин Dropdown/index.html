@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Plugin</title>
+    <style>
+        * {
+            /*Чтобы элемент не выходил за границы общего блока*/
+            box-sizing: border-box;
+        }
+
+        .app {
+            width: 100%;
+            height: 100vh;
+
+            /*Убираем горизонтальные и вертикальные скроллы*/
+            overflow: hidden;
+
+            display: flex;
+            /*Выравнивание по центру*/
+            justify-content: center;
+
+            padding-top: 50px;
+        }
+
+        .dropdown {
+            /*Чтобы меню появлялось внутри данного блока*/
+            position: relative;
+            width: 400px;
+        }
+
+        .dropdown.open .dropdown__menu {
+            /*Если у dropdown есть класс open, то к dropdown__menu
+            задаётся значение block*/
+            display: block;
+        }
+
+        .dropdown__label {
+            /*Ширина берётся от родителя, у которого width: 400px*/
+            width: 100%;
+
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+            cursor: pointer;
+        }
+
+        .dropdown__menu {
+            /*Убираем дефолтные точки в li*/
+            list-style: none;
+
+            /*По умолчанию меню скрыто*/
+            display: none;
+
+            /*Чтобы не перекрывал основной контент, который может идти
+            под данным списком*/
+            position: absolute;
+            width: 100%;
+            top: 29px;
+
+            margin: 0;
+            padding: 10px 0;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .dropdown__menu li {
+            padding: 5px 10px;
+        }
+
+        .dropdown__menu li:hover {
+            background: rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app">
+
+    <!--Плагин-->
+    <div class="dropdown" id="dropdown">
+
+        <!--Название выбранного элемента-->
+        <div class="dropdown__label"></div>
+
+        <!--Выпадающий список-->
+        <ul class="dropdown__menu"></ul>
+    </div>
+
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

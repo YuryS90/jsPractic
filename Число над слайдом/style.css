@@ -1,0 +1,252 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+html {
+
+ }
+
+ .clearfix {
+     display: block;
+     clear: both;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 32px;
+ }
+ 
+ body {
+    margin: 0px;
+ }
+
+.site-header {
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.answer {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.answer li {
+    background: #f1f1f1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer li:hover {
+    background: #cecece;
+    font-weight: bold;
+}
+
+.answer li:active{
+    background: #8b8b8b
+}
+
+.result {
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.result-img {
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+}
+
+.reload-button {
+    display: block;
+    margin: 20px auto;
+    background: #c0c0c0;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    min-width: 200px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reload-button:hover {
+    background: #acacac;
+}
+
+.block-cover {
+    
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+a .block-cover {
+    text-decoration: none;
+}
+
+a .block-cover:hover {
+    background: #e0e0e0;
+}
+
+.block-cover img{
+    max-width: 100%;
+}
+
+.block-25 {
+    float: left;
+    width: 33.333%;
+}
+
+.block-25 a {
+    text-decoration: none;
+}
+
+.footer-ul {
+    padding: 40px;
+}
+
+footer {
+    border-top: 1px solid #333;
+    margin: 50px  0;
+    /* padding-top: 40px; */
+}
+
+footer h2 {
+    font-size: 20px;
+    margin: 30px 0 ;
+}
+
+@media screen and (max-width: 640px) { 
+    .block-25 {
+        float: none;
+        width: 100%;
+    }
+}
+
+.test {
+    width: 100px;
+    /* height: 100px; */
+    background: orange;
+    margin: 5px;
+    /* display: none; */
+    /* visibility: hidden; */
+    height: 0;
+}
+
+.field {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+.block1 {
+    width: 150px;
+    height: 150px;
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+}
+
+.window {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+}
+
+.door {
+    width: 40px;
+    height: 100px;
+    background: brown;
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+}
+
+.roof {
+    z-index: 2;
+    width: 0;
+    height: 0;
+    /* background: red; */
+    position: absolute;
+    left: 95px;
+    top: 50px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid blue;
+    border-left: 100px solid transparent;
+}
+
+.tube {
+    width: 30px;
+    height: 40px;
+    background: brown;
+    position: absolute;
+    bottom: 180px;
+    left: 130px;
+}
+
+.smog {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: blue;
+    position: absolute;
+    bottom: 230px;
+    left: 110px;
+}
+
+.number {
+    width: 300px;
+}
+
+.range {
+    width: 302px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+.range > input[type="range"]{
+    position: absolute;
+    bottom: 0;
+}
+
+.range > .range-num {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    left: -10px;
+    top: 0;
+}

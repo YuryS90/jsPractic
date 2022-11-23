@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--Кнопка показать модальное окно-->
+<!--data-modal="#sign-in" - Это какое окно нужно открывать/закрывать-->
+<button class="modal-show" data-modal="#sign-in">show window</button>
+
+<!-- Оболочка модального окна-->
+<div class="modal-wrap hide" id="sign-in">
+    <div class="modal">
+        Our modal window
+        <!--Обязательно должен быть class и data, чтобы закрыть нужное окно-->
+        <button class="modal-close">Close</button>
+        <!--round-close - класс для стилизации x-->
+        <button class="modal-close round-close">x</button>
+    </div>
+</div>
+
+<script src="js/modal.js"></script>
+</body>
+
+</html>

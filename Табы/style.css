@@ -1,0 +1,22 @@
+.tabs {
+    border: 1px solid #787777;
+    padding: 10px;
+    margin: 50px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.tab {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #787777;
+    padding: 5px 10px;
+}
+
+

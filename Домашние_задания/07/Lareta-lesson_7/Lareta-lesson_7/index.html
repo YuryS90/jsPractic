@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="wrapper">
+
+	<div class="container">
+		<h3>Задания урока №7</h3>
+		<div id="accordion">
+		<div class="card">
+		    <div class="card-header" id="heading1">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+		          #1. Вывести числа от 0 до 100
+		        </button>
+		      </h5>
+		    </div>
+
+		    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="all-numbers"></div>
+					<button class='button show-all-numbers' data-role='empty'>Вывести числа</button>
+		      </div>
+		    </div>
+		  </div>
+
+		 <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          #2. Четные числа
+		        </button>
+		      </h5>
+		    </div>
+
+		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="numBlock"></div>
+					<button class='button show-even-numbers' data-role='empty'>Четные числа</button>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          #3. Обратная последовательность
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="reversNumBlock"></div>
+				<button class='button show-numbers' data-role='empty'>Обратный порядок</button>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		         #4. Суммируем числа
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="lesson-block--flex">
+
+					<label class='label--summ-input'> Сумма чисел от 1 до 100 =
+						<input type="text" class='summ-input'>
+					</label>
+					<button class='button summ-numbers' >Посчитать</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingFour">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		         #5. Степень числа
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+		      <div class="card-body">
+		        <div class="lesson-block">
+					<div class="lesson-block--flex">
+						<div class="label-group">
+							<label class="label-fix-wigth"> Основание степени:</label>
+							<input type="number" class='block-input basis-number' data-role='1'>
+						</div>
+						<div class="label-group">
+
+							<label class="label-fix-wigth"> Показатель степени:</label>
+							<input type="number" class='block-input power-number' data-role='2'>
+						</div>
+						<div class="label-group">
+							<label class="label-fix-wigth"> Значение степени:</label>
+							<input type="number" class='block-input power-result' >
+						</div>
+					</div>
+					<button class='button buttonShowResult'>Результат</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingFive">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		         #6. Таблица умножения на 7
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+		      <div class="card-body">
+		 		<div class="multiplication-resultbox"></div>
+				<button class='button buttonShowTable' data-role='passive'>Вывести</button>
+		      </div>
+		    </div>
+		  </div>
+
+		   <div class="card">
+		    <div class="card-header" id="headingSeven">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+		         #7. Произведение массива чисел
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+		      <div class="card-body">
+		 		<div class="lesson-block--flex">
+				<div class="label-group">
+					<label> Первое число массива:</label>
+					<input type="number" class='block-input multiplication-first-number'>
+				</div>
+				<div class="label-group">
+					<label>Последнее число массива:</label>
+					<input type="number" class='block-input multiplication-last-number'>
+				</div>
+				<div class="label-group">
+					<label> Значение произведения:</label>
+					<input type="number" class=' showResult showResult-input'>
+				</div>
+			</div>
+			<button class='button get-multiplication-result'>Посчитать</button>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingSimbols">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSimbols" aria-expanded="false" aria-controls="collapseSimbols">
+		         #8. Спецсимволы HTML
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseSimbols" class="collapse" aria-labelledby="headingSimbols" data-parent="#accordion">
+		      <div class="card-body">
+				<div class="simbol-block"></div>
+			 	<button class='button show-simbols'>Спецсимволы HTML</button>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingParagrafe">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseParagrafe" aria-expanded="false" aria-controls="collapseParagrafe">
+		         #9. Нумерация параграфов
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseParagrafe" class="collapse" aria-labelledby="headingParagrafe" data-parent="#accordion">
+		      <div class="card-body">
+				<div class="text-block">
+					<p class="text-side">Если у статуи всадника у лошади подняты обе передние ноги, это означает, что человек погиб в бою. Если у лошади поднята только одна нога, значит человек погиб от полученных в битве ран. Если у лошади все 4 ноги на земле, значит человек умер естесственной смертью.</p>
+					<p class="text-side">Символ #, часто называемый "решеткой", "знаком номера" или "знаком фунта" на самом деле имеет официальное название - октоторп. </p>
+					<p class="text-side">Население мира в 5000 году до н.э. составляло 5 миллионов человек. </p>
+					<p class="text-side">Всего лишь одна капля нефти делает непригодным для питья 25 литров воды. </p>
+					<p class="text-side">Два самых высоких показателя IQ, когда-либо зафиксированных на Земле, принадлежат женщинам. </p>
+				</div>
+			 	<button class='button paragrafe-number'>Нумеровать</button>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingZoo">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseZoo" aria-expanded="false" aria-controls="collapseZoo">
+		         #10. Знак зодиака
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseZoo" class="collapse" aria-labelledby="headingZoo" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+					<div class="lesson-block--flex lesson-block--flex-center">
+						<div class="label-group d-flex">
+							<label > День рождения:</label>
+							<input type="number" class='block-input birthDay' >
+						</div>
+						<div class="label-group d-flex">
+							<label  > Месяц рождения:</label>
+							<input type="number" class='block-input birthMn' >
+						</div>
+						<button class='btn btn-primary inquire-zodiac'>Добавить</button>
+					</div>
+					<div class="zodiac-sings"></div>
+
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingColorSpan">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseColorSpan" aria-expanded="false" aria-controls="collapseColorSpan">
+		         #11 - 12. Цвет для спанов. Количество параграфов
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseColorSpan" class="collapse" aria-labelledby="headingColorSpan" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="text-block">
+				  		<p> Слюна человека <span>закипает</span> при температуре в три раза выше, чем у обычной воды.</p>
+				  		<p> Пингвин – <span>единственная птица</span>, умеющая плавать, но не способная летать.</p>
+						<p>Глаза осла размещены таким образом, что в поле его зрения <span>всегда находятся</span> все 4 ноги.</p>
+						<p>Среди насекомых <span>только богомол</span> умеет поворачивать голову.</p>
+						<p>Первая бомба, сброшенная на Берлин в ходе Второй мировой войны, <span>убила лишь</span> одного слона.</p>
+						<p>Выражение в шахматах «Шах и Мат» в переводе с персидского языка означает <span>«король умер»</span>.</p>
+						<p>На планете живет приблизительно <span>такое же количество</span> кур, как и людей.</p>
+						<p>У тигров полосатый <span>не только мех</span>, но и сама кожа.</p>
+						<p>Чтобы освободиться из челюстей крокодила, следует <span>«просто» надавить пальцами на его глаза</span>. </p>Самое интересное, что вряд ли вы вспомните про этот факт, если попадете в крокодилью пасть.</p>
+						<p>Все ветряные мельницы<span> вращаются против</span> часовой стрелки, и только в Ирландии происходит все наоборот.</p>
+
+
+				  	</div>
+
+					<button class='btn btn-primary color-span'>Добавить</button>
+
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingRemove">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseRemove" aria-expanded="false" aria-controls="collapseRemove">
+		         #13. Перемещение внутри массива
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseRemove" class="collapse" aria-labelledby="headingRemove" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="array-block"></div>
+					<button class='btn btn-primary btn-remove-item'>Старт</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingLesson14">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson14" aria-expanded="false" aria-controls="collapseLesson14">
+		         #14-15. Отрицательные числа в массиве
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson14" class="collapse" aria-labelledby="headingLesson14" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="custom-array">Произвольный массив чисел:&nbsp;</div>
+				  	<div id="negative-numbers-count"></div>
+				  	<div id="negative-numbers">Значения этих чисел: </div>
+					<button class='btn btn-primary btn-custom-array'>Старт</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingLesson16">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson16" aria-expanded="false" aria-controls="collapseLesson16">
+		         #16. Массив из единиц
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson16" class="collapse" aria-labelledby="headingLesson16" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+				  	<div class="lesson-block--flex-center label-group--baseline">
+						<div class="label-group d-flex ">
+							<label > Укажите длину массива:</label>
+							<input type="number" class='block-input input-array-length' >
+						</div>
+						<div class="label-group d-flex">
+							<span  > Массив:&nbsp;</span>
+							<div class="array-block">[&nbsp; <span  class='block-input input-out-array' ></span> &nbsp;]</div>
+						</div>
+					</div>
+					<button class='btn btn-primary btn-out-array'>Старт</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingLesson17">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson17" aria-expanded="false" aria-controls="collapseLesson17">
+		         #17. Произвольный массив чисел от 0 до 100.
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson17" class="collapse" aria-labelledby="headingLesson17" data-parent="#accordion">
+		      <div class="card-body">
+				  <div class="lesson-block">
+				  	<div class=" lesson-block--flex-center label-group--baseline">
+						<div class="label-group d-flex ">
+							<label > Укажите длину массива:</label>
+							<input type="number" class='block-input input-randomarray-length' >
+						</div>
+						<div class="label-group d-flex">
+							<span  > Массив:&nbsp;</span>
+							<div class="random-array-block">[&nbsp; <span  class='block-input input-out-array--random' ></span> &nbsp;]</div>
+						</div>
+					</div>
+					<button class='btn btn-primary btn-out-array--random'>Получить массив</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingLesson18">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson18" aria-expanded="false" aria-controls="collapseLesson18">
+		         #18. Массив из чисел и строк
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson18" class="collapse" aria-labelledby="headingLesson18" data-parent="#accordion">
+		 		<div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="random-array">Смешанный массив :&nbsp;</div>
+
+				  	<div id="only-numbers">Результат фильтрации: </div>
+					<button class='btn btn-primary btn-filter-array'>Фильтровать</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingLesson19">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson19" aria-expanded="false" aria-controls="collapseLesson19">
+		         #19. Максимум массива
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson19" class="collapse" aria-labelledby="headingLesson19" data-parent="#accordion">
+		 		<div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="number-array">Числовой массив :&nbsp;</div>
+
+				  	<div id="max-number">Максимальное значение: </div>
+					<button class='btn btn-primary btn-max-value' data-action='noclick'>Максимум</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="card-header" id="headingLesson20">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLesson20" aria-expanded="false" aria-controls="collapseLesson20">
+		         #20. Количество повторов элемента
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseLesson20" class="collapse" aria-labelledby="headingLesson20" data-parent="#accordion">
+		 		<div class="card-body">
+				  <div class="lesson-block">
+				  	<div id="big-array">Числовой массив :&nbsp;</div>
+
+				  	<div id="repeat-value">Повторяющиеся значения выводятся в консоль </div>
+					<button class='btn btn-primary btn-repeat-value' data-action=''>Вывести</button>
+				</div>
+		      </div>
+		    </div>
+		  </div>
+
+
+
+
+
+		</div>
+
+	</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src='main.js'></script>
+</body>
+</html>

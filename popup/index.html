@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Адаптив -->
+<!--    <meta name="viewport" content="width=device-width">-->
+    <title>Модальное окно</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Оболочка -->
+<div class="wrapper">
+    <header id="header" class="header lock-padding">
+        <div class="header__container _container">
+            <a href="" class="header__logo"></a>
+            <a href="#popup" class="header__phone popup__link">Попап №1</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__container _container">
+            <section class="content__section content__section_row">
+                <div class="content__body">
+                    <h1 class="content__title">GO</h1>
+                    <div class="content__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div> <!--/content__text -->
+                </div> <!--/content__body -->
+                <a href="#image" class="content__image popup__link">
+                    <img src="image/intro.jpg" alt="">
+                </a>
+            </section>
+            <section class="content__section">
+                <h2 class="content__subtitle">Работай</h2>
+                <div class="content__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p><a href="#popup_2" class="popup__link">Попап №2</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </section>
+        </div>  <!--/content__container _container -->
+    </div> <!--/content -->
+</div><!--/wrapper -->
+
+<div id="popup" class="popup">
+<!--    <a href="#header" class="popup__area"></a>-->
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">X</a>
+            <div class="popup__title">Modal window #1</div>
+            <div class="popup__text">
+                <a href="#popup_2" class="popup__link">Попап №2</a>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque harum quisquam saepe. Delectus
+                dolores ducimus ex nam nobis qui tenetur? At distinctio eos ex id, ipsum nisi recusandae sunt
+                voluptatum.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup_2" class="popup">
+    <!--    <a href="#header" class="popup__area"></a>-->
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">X</a>
+            <div class="popup__title">Modal window #2</div>
+            <div class="popup__text">
+                <a href="#popup_2" class="popup__link">Попап №2</a>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque harum quisquam saepe. Delectus
+                dolores ducimus ex nam nobis qui tenetur? At distinctio eos ex id, ipsum nisi recusandae sunt
+                voluptatum.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
